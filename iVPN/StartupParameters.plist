@@ -1,0 +1,14 @@
+{
+	Description = "iVPN Server";
+	Provides = (
+		IVPND,
+	);
+	Requires = (
+		Network,
+		Resolver,
+	);
+	OrderPreference = Late;
+	Messages = {
+		start = "Starting vpnd server";
+	};
+}

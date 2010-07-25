@@ -1,0 +1,12 @@
+#!/bin/sh
+
+. /etc/rc.common
+
+StartService() {
+
+    vpnd
+	sysctl -w net.inet.ip.forwarding=1
+
+}
+
+RunService "$1"
